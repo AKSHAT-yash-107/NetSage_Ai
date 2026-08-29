@@ -1,0 +1,81 @@
+case_id,category,severity,ai_root_cause,ai_confidence,human_status,agreement,reviewer_note
+C001,VLAN,Medium,wrong_vlan_assignment: Switchport evidence shows the access interface is assigned to the wrong VLAN.,0.99,Accepted,Yes,Confirmed. AI diagnosis matches the deterministic rule finding and evidence.
+C002,VLAN,High,trunk_vlan_not_allowed: Trunk evidence shows required VLAN(s) [30] are not in the allowed VLAN list.,0.99,Accepted,Yes,Confirmed. Diagnosis matches the deterministic finding and command evidence.
+C003,VLAN,Medium,missing_vlan: The required VLAN is absent from the switch VLAN database.,0.99,Accepted,Yes,Confirmed. Diagnosis matches the deterministic finding and command evidence.
+C004,VLAN,High,vtp_revision_problem: VTP evidence shows a newer revision can overwrite the VLAN database.,0.99,Accepted,Yes,Confirmed. Diagnosis matches the deterministic finding and command evidence.
+C005,Gateway,Medium,gateway_mismatch: The host's default gateway does not match the local router/subnet.,0.99,Accepted,Yes,Confirmed. Diagnosis matches the deterministic finding and command evidence.
+C006,Gateway,High,interface_down: Interface status evidence indicates that the required interface/link is down.,0.99,Accepted,Yes,Confirmed. Diagnosis matches the deterministic finding and command evidence.
+C007,Gateway,High,interface_down: Interface status evidence indicates that the required interface/link is down.,0.99,Pending,,Not yet reviewed.
+C008,Gateway,Medium,duplicate_ip: ARP/IP evidence shows the same address assigned to multiple devices.,0.99,Pending,,Not yet reviewed.
+C009,DHCP,High,missing_dhcp_relay: The VLAN interface lacks the DHCP relay/helper configuration.,0.99,Pending,,Not yet reviewed.
+C010,DHCP,Medium,dhcp_pool_exhaustion: DHCP pool utilization indicates the address pool is exhausted or nearly exhausted.,0.99,Pending,,Not yet reviewed.
+C011,DHCP,Medium,"dhcp_pool_overlap: Two DHCP pools use the same network, creating an address-space overlap.",0.99,Pending,,Not yet reviewed.
+C012,DHCP,Medium,missing_dhcp_dns_option: The DHCP pool does not supply a DNS server option.,0.99,Pending,,Not yet reviewed.
+C013,DNS,Low,missing_dns_record: DNS lookup evidence shows the required DNS record is missing or incorrect.,0.99,Pending,,Not yet reviewed.
+C014,DNS,High,dns_unreachable: DNS server connectivity evidence shows that the DNS service is unreachable. | interface_down: Interface status evidence indicates that the required interface/link is down.,0.99,Pending,,Not yet reviewed.
+C015,DNS,Low,missing_dns_forwarder: The internal DNS server has no forwarder for external domains.,0.99,Pending,,Not yet reviewed.
+C016,DNS,Medium,stale_dns_record: DNS evidence indicates that a stale record/cache is being returned.,0.99,Pending,,Not yet reviewed.
+C017,Routing,High,missing_route: Routing-table evidence indicates that the required route is absent.,0.99,Pending,,Not yet reviewed.
+C018,Routing,High,missing_route: Routing-table evidence indicates that the required route is absent.,0.99,Pending,,Not yet reviewed.
+C019,Routing,High,ospf_area_mismatch: OSPF configuration shows different areas on the neighbor link.,0.99,Pending,,Not yet reviewed.
+C020,Routing,Medium,missing_route: Routing-table evidence indicates that the required route is absent.,0.99,Pending,,Not yet reviewed.
+C021,Routing,High,routing_loop: Routing evidence shows traffic looping between the routers.,0.99,Pending,,Not yet reviewed.
+C022,ACL,Medium,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent.,0.99,Pending,,Not yet reviewed.
+C023,ACL,High,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent.,0.99,Pending,,Not yet reviewed.
+C024,ACL,High,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent.,0.99,Pending,,Not yet reviewed.
+C025,ACL,Medium,acl_vty_mismatch: VTY lines reference an ACL different from the configured management ACL.,0.99,Pending,,Not yet reviewed.
+C026,NAT,High,missing_route: Routing-table evidence indicates that the required route is absent. | nat_inside_missing: The LAN interface is missing the ip nat inside designation.,0.99,Pending,,Not yet reviewed.
+C027,NAT,Medium,static_nat_problem: The required static NAT/port-forward mapping is missing.,0.99,Pending,,Not yet reviewed.
+C028,NAT,Medium,nat_acl_problem: The NAT ACL excludes required inside traffic from translation.,0.99,Pending,,Not yet reviewed.
+C029,Wireless,High,,,Pending,,Not yet reviewed.
+C030,Wireless,High,trunk_vlan_not_allowed: Trunk evidence shows the required VLAN is missing from the allowed VLAN list.,0.99,Pending,,Not yet reviewed.
+C031,VLAN,Medium,wrong_vlan_assignment: Switchport evidence shows the access interface is assigned to the wrong VLAN.,0.99,Pending,,Not yet reviewed.
+C032,VLAN,High,missing_vlan: The required VLAN is absent from the switch VLAN database.,0.99,Pending,,Not yet reviewed.
+C033,VLAN,High,trunk_vlan_not_allowed: Trunk evidence shows the required VLAN is missing from the allowed VLAN list.,0.99,Pending,,Not yet reviewed.
+C034,VLAN,High,trunk_mode_mismatch: The inter-switch interface is configured as an access port instead of a trunk.,0.99,Pending,,Not yet reviewed.
+C035,VLAN,Medium,native_vlan_mismatch: Trunk endpoints use different native VLANs.,0.99,Pending,,Not yet reviewed.
+C036,VLAN,High,missing_vlan: The required VLAN is absent from the switch VLAN database.,0.99,Pending,,Not yet reviewed.
+C037,VLAN,High,trunk_vlan_not_allowed: Trunk evidence shows the required VLAN is missing from the allowed VLAN list.,0.99,Pending,,Not yet reviewed.
+C038,Routing,High,missing_route: Routing-table evidence indicates that the required route is absent.,0.99,Pending,,Not yet reviewed.
+C039,Routing,High,missing_route: Routing-table evidence indicates that the required route is absent.,0.99,Pending,,Not yet reviewed.
+C040,Routing,High,interface_down: Interface status evidence indicates that the required interface/link is down.,0.99,Pending,,Not yet reviewed.
+C041,Routing,High,missing_route: Routing-table evidence indicates that the required route is absent.,0.99,Pending,,Not yet reviewed.
+C042,Routing,High,ospf_area_mismatch: OSPF configuration shows different areas on the neighbor link.,0.99,Pending,,Not yet reviewed.
+C043,Routing,Medium,ospf_timer_mismatch: OSPF hello/dead timer values differ between neighbors.,0.99,Pending,,Not yet reviewed.
+C044,Routing,Medium,ospf_network_statement: OSPF is configured with the wrong network statement.,0.99,Pending,,Not yet reviewed.
+C045,DHCP,High,missing_dhcp_relay: The VLAN interface lacks the DHCP relay/helper configuration.,0.99,Pending,,Not yet reviewed.
+C046,DHCP,High,wrong_dhcp_network: DHCP evidence shows the client is receiving an address from the wrong network.,0.99,Pending,,Not yet reviewed.
+C047,DHCP,Medium,dhcp_pool_exhaustion: DHCP pool utilization indicates the address pool is exhausted or nearly exhausted.,0.99,Pending,,Not yet reviewed.
+C048,DHCP,High,gateway_mismatch: The DHCP default-router option does not match the router gateway.,0.99,Pending,,Not yet reviewed.
+C049,DHCP,High,dhcp_service_disabled: The DHCP service is disabled in the router configuration.,0.99,Pending,,Not yet reviewed.
+C050,DNS,High,dns_unreachable: DNS server connectivity evidence shows that the DNS service is unreachable.,0.99,Pending,,Not yet reviewed.
+C051,DNS,Medium,missing_dns_record: DNS lookup evidence shows the required DNS record is missing or incorrect.,0.99,Pending,,Not yet reviewed.
+C052,DNS,Medium,wrong_dns_server: The client is configured with the wrong DNS server.,0.99,Pending,,Not yet reviewed.
+C053,DNS,Medium,stale_dns_record: DNS evidence indicates that a stale record/cache is being returned.,0.99,Pending,,Not yet reviewed.
+C054,ACL,High,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent.,0.99,Pending,,Not yet reviewed.
+C055,ACL,Critical,acl_shadowing: A broad permit rule is overriding or replacing the intended isolation policy.,0.99,Pending,,Not yet reviewed.
+C056,ACL,High,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent.,0.99,Pending,,Not yet reviewed.
+C057,ACL,Medium,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent.,0.99,Pending,,Not yet reviewed.
+C058,ACL,High,acl_ordering: ACL ordering causes a deny to match before the intended permit.,0.99,Pending,,Not yet reviewed.
+C059,NAT,High,nat_inside_missing: The LAN interface is missing the ip nat inside designation.,0.99,Pending,,Not yet reviewed.
+C060,NAT,High,pat_missing: PAT/overload is not configured for the inside hosts.,0.99,Pending,,Not yet reviewed.
+C061,NAT,High,static_nat_problem: The static NAT mapping shown is inconsistent with the expected published server configuration.,0.99,Pending,,Not yet reviewed.
+C062,NAT,High,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent. | nat_acl_problem: The NAT ACL excludes required inside traffic from translation.,0.99,Pending,,Not yet reviewed.
+C063,NAT,Medium,dhcp_pool_exhaustion: DHCP pool utilization indicates the address pool is exhausted or nearly exhausted. | nat_pool_exhaustion: The NAT address pool has no free addresses.,0.99,Pending,,Not yet reviewed.
+C064,Gateway/IP,High,gateway_mismatch: The host's default gateway does not match the local router/subnet.,0.99,Pending,,Not yet reviewed.
+C065,Gateway/IP,High,duplicate_ip: ARP/IP evidence shows the same address assigned to multiple devices.,0.99,Pending,,Not yet reviewed.
+C066,Gateway/IP,High,wrong_mask: The host or DHCP pool uses an incorrect subnet mask.,0.99,Pending,,Not yet reviewed.
+C067,Gateway/IP,High,interface_down: Interface status evidence indicates that the required interface/link is down.,0.99,Pending,,Not yet reviewed.
+C068,Gateway/IP,High,duplicate_ip: ARP/IP evidence shows the same address assigned to multiple devices.,0.99,Pending,,Not yet reviewed.
+C069,Gateway/IP,High,interface_down: Interface status evidence indicates that the required interface/link is down.,0.99,Pending,,Not yet reviewed.
+C070,Gateway/IP,Medium,stale_ip_configuration: The host retains an IP configuration from its previous subnet.,0.99,Pending,,Not yet reviewed.
+C071,Wireless,High,trunk_vlan_not_allowed: Trunk evidence shows the required VLAN is missing from the allowed VLAN list.,0.99,Pending,,Not yet reviewed.
+C072,Wireless,Critical,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent. | acl_shadowing: A broad permit rule is overriding or replacing the intended isolation policy.,0.99,Pending,,Not yet reviewed.
+C073,Wireless,High,trunk_vlan_not_allowed: Trunk evidence shows the required VLAN is missing from the allowed VLAN list.,0.99,Pending,,Not yet reviewed.
+C074,VLAN,Medium,wrong_vlan_assignment: Switchport evidence shows the access interface is assigned to the wrong VLAN.,0.99,Pending,,Not yet reviewed.
+C075,Routing,High,missing_route: Routing-table evidence indicates that the required route is absent.,0.99,Pending,,Not yet reviewed.
+C076,DHCP,High,missing_dhcp_relay: The VLAN interface lacks the DHCP relay/helper configuration.,0.99,Pending,,Not yet reviewed.
+C077,DNS,Medium,dns_zone_problem: DNS evidence indicates the internal zone is missing or misconfigured.,0.99,Pending,,Not yet reviewed.
+C078,ACL,High,acl_block: ACL evidence shows that required traffic is denied or the required isolation deny is absent.,0.99,Pending,,Not yet reviewed.
+C079,NAT,High,nat_outside_missing: The WAN interface is missing the ip nat outside designation.,0.99,Pending,,Not yet reviewed.
+C080,Gateway/IP,High,gateway_mismatch: The host's default gateway does not match the local router/subnet.,0.99,Pending,,Not yet reviewed.
