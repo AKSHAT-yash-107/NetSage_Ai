@@ -10,6 +10,15 @@ The system is designed around a simple principle:
 It currently evaluates a dataset of **80 network troubleshooting cases (C001–C080)** covering VLANs, trunking, DHCP, DNS, routing, OSPF, ACLs, NAT/PAT, IP configuration, and related network faults.
 
 ---
+## 🚀 Live Demo
+
+**[Open NetSage AI →](https://akshat-yash-107-netsage-ai-app-6k2kq9.streamlit.app/)**
+
+Try the deployed application to:
+- Analyze network troubleshooting cases
+- View deterministic rule findings
+- Generate Gemini-powered diagnoses
+- Submit human review decisions
 
 ## 📊 ![NetSage AI Dashboard](assets/dashboard.png)
 
